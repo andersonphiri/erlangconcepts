@@ -1,0 +1,3 @@
+io:format("Hello, this is an erlang session on ANDERSON's ubuntu 20.04~n").
+io:format("Eralng started Directory: ~p~n",[init:get_argument(home)]).
+io:format("~n~n~n").

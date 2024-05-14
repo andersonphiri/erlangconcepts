@@ -1,0 +1,21 @@
+.SUFFIXES: .erl .beam .yrl
+
+.erl.beam:
+        erlc -W $<
+
+.yrl.erl:
+        erlc -W $<
+
+ERL = erl -boot start_clean
+MODS = module1 module2 modules3
+
+all: compile
+     ${ERL} -pa '/home/anderson/LearnErlang-2024/LearnErlang-2024/learnyousomeerlang/src/joearmspesfcw' -s module1 start
+
+compile: ${MODS:%=%.beam}
+
+clean:
+    rm -rf *.beam erl_crash.dump
+
+
+

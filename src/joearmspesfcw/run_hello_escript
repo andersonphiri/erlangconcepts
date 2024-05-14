@@ -1,0 +1,5 @@
+#!/usr/bin/escript
+
+
+main(Args) ->
+    io:format("Hello World, currently being run from escript~n").

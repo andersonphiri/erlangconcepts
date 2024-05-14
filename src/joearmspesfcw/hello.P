@@ -1,0 +1,13 @@
+-file("hello.erl", 1).
+
+-module(hello).
+
+-author("phiri").
+
+-export([start/0]).
+
+start() ->
+    io:format("hellooh world~n", []).
+
+
+
