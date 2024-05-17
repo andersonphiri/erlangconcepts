@@ -1,0 +1,4 @@
+{
+name, "Anderson", age,29, ideas,[1,3,"another idea"]
+}.
+{locale_id,1, locales, ["english", "zulu"]}.
