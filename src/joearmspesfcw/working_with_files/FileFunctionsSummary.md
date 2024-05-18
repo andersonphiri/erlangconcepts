@@ -1,0 +1,35 @@
+### The following functions are available 
+
+- <code>change_group</code> : change group of a file
+- <code>change_owner</code> : changes owner of a file
+- <code>change_time</code> : changes time of a file
+- <code>close</code>
+- <code>consult</code>
+- <code>copy</code>
+- <code>del_dir</code>
+- <code>delete</code>
+- <code>eval</code>
+- <code>get_cwd</code> : gets the current directory
+- <code>format_error</code> : return a descriptive string for an error system
+- <code>list_dir</code> : list files in a directory
+- <code>make_dir</code> : make a directory
+- <code>make_link</code> : make hard link
+- <code>make_symlink</code> : make a symbolic to a file
+- <code>open</code>
+- <code>position</code> : sets a position in a file
+- <code>pread(FileHandle,From, Len)</code> : read from a certain position
+- <code>pwrite</code> : write to a file at a certain position
+- <code>read</code> : read from a file
+- <code>read_file</code> : read the entire file
+- <code>read_file_info</code> : Get info about a file
+- <code>read_link</code> : see what link is pointing to
+- <code>read_link_info</code> : Get information about a link or file
+- <code>rename</code> : rename a file
+- <code>script</code> : evaluate and return the value of Erlang expression in a file
+- <code>set_cwd</code> : sets the current working directory
+- <code>sync</code> : synchronize the in-memory state of a file with that on the physical medium
+- <code>truncate</code>: truncate a file
+- <code>write</code> : writes to a file
+- <code>write_file</code> : write entire file 
+- <code>write_file_info</code> : change information about a file
+- <code></code>
