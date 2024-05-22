@@ -130,17 +130,9 @@ log_client_ip(Socket) ->
     {error,Why} -> io:format("failed to capture connecting client info: ~p~n",[Why])
   end .
 
-%% udp
 
-server_udp(Port) ->
-  {ok, Socket} = gen_udp:open(Port, [binary]),
-  loop_udp(Socket).
+  
 
 
-loop_udp(Socket) ->
-  receive
-    {udp, Socket, Host, Port, BinData} ->
-      BinReply = term_to_binary({ok, 123}),
-      gen_udp:send(Socket, Host, Port, BinReply),
-      loop_udp(Socket)
-  end.
+
+
