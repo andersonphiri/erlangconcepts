@@ -4,8 +4,8 @@
 %%%
 %%% @end
 %%% Created : 04 Jun 2024 by anderson phiri <andersonp@generictechnologie.com>
--module(name_server).
--import(server2, [rpc/2]).
+-module(name_server1).
+-import(server3, [rpc/2]).
 -export([init/0, add/2, find/1, handle/2]).
 init() -> dict:new().
 

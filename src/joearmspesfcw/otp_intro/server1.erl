@@ -20,6 +20,7 @@ loop(Name,Mod,State) ->
     receive
         {From, Request} ->
             {Response, State1} = Mod:handle(Request,State),
+            io:format("current state: ~p~n",[State1]),
             From ! {Name, Response},
             loop(Name, Mod, State1)
     end.
